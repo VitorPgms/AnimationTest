@@ -58,6 +58,7 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.vitordepaula.animationtest.ui.theme.AnimationTestTheme
@@ -111,6 +112,13 @@ fun ProfileHeader(
             modifier = modifier
                 .padding(top = 8.dp)
         )
+        Text(
+            text = stringResource(R.string.text_position),
+            style = MaterialTheme.typography.labelMedium,
+            color = Color.Gray,
+            modifier = modifier
+                .padding(8.dp)
+        )
     }
 }
 
@@ -128,6 +136,7 @@ fun ProfileDescription(
             Text(
                 text = text,
                 style = MaterialTheme.typography.bodyMedium,
+                textAlign = TextAlign.Justify,
                 modifier = modifier
                     .padding(16.dp)
             )

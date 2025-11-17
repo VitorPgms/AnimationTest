@@ -3,6 +3,7 @@
     <string name="botton_navigation_home">Home</string>
     <string name="botton_navigation_profile">Profile</string>
     <string name="text_profile">Vitor de Paula Gomes</string>
+    <string name="text_position">Desenvolvedor Android</string>
     <string name="text_description">Meu nome é Vitor de Paula, sou formado em Análise e Desenvolvimento de Sistemas, com foco em Front-End e desenvolvimento Android. Tenho experiência no desenvolvimento de sites (WordPress, HTML, CSS, JavaScript e React), além de conhecimentos em SEO e design de interfaces com Figma.
         Na área de desenvolvimento mobile, possuo experiência com Kotlin, arquitetura MVVM, Room Database e interfaces em XML, desenvolvendo aplicativos Android com foco em performance, usabilidade e boas práticas..</string>
 </resources>
