@@ -7,10 +7,6 @@
           <option name="column" value="Name" />
           <option name="order" value="ASCENDING" />
         </ColumnSorterState>
-        <ColumnSorterState>
-          <option name="column" value="Name" />
-          <option name="order" value="ASCENDING" />
-        </ColumnSorterState>
       </list>
     </option>
   </component>
