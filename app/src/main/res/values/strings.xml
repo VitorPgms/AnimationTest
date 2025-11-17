@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AnimationTest</string>
+    <string name="botton_navigation_home">Home</string>
+    <string name="botton_navigation_profile">Profile</string>
+    <string name="text_profile">Vitor de Paula Gomes</string>
+    <string name="text_description">Vitor de Paula Gomes, Desenvolvedor Mobile, 1.74m, forte e amante de loiras.
+    Odeia colica, escuta Taylor Swift e o seu sonho e que as mulheres não sofram jamais por outro homem a não ser ele.</string>
+</resources>
