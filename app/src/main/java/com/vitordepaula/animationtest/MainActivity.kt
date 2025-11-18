@@ -37,6 +37,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.NavigationBar
 import androidx.compose.material3.NavigationBarItem
+import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarColors
@@ -174,11 +175,12 @@ fun SootheBottomNavigation(
 
     val backgroundColor by animateColorAsState(
         targetValue = if (tabPage == TabPage.Home) Color(0xFFFFF5EE) else Color(0xFF90EE90),
+        animationSpec = tween(durationMillis = 300),
         label = "backgorund color"
     )
 
     NavigationBar(
-        containerColor = backgroundColor,
+        containerColor = MaterialTheme.colorScheme.surface,
         modifier = modifier
     ) {
         NavigationBarItem(
@@ -194,7 +196,13 @@ fun SootheBottomNavigation(
                 )
             },
             selected = tabPage == TabPage.Home,
-            onClick = {onTabSelected(TabPage.Home)}
+            onClick = {onTabSelected(TabPage.Home)},
+            colors = NavigationBarItemDefaults.colors(
+                selectedIconColor = backgroundColor,
+                selectedTextColor = backgroundColor,
+                unselectedIconColor = Color.Gray,
+                unselectedTextColor = Color.Gray
+            )
         )
         NavigationBarItem(
             icon = {
@@ -209,7 +217,13 @@ fun SootheBottomNavigation(
                 )
             },
             selected = tabPage == TabPage.Profile,
-            onClick = {onTabSelected(TabPage.Profile)}
+            onClick = {onTabSelected(TabPage.Profile)},
+            colors = NavigationBarItemDefaults.colors(
+                selectedIconColor = backgroundColor,
+                selectedTextColor = backgroundColor,
+                unselectedIconColor = Color.Gray,
+                unselectedTextColor = Color.Gray
+            )
         )
     }
 
